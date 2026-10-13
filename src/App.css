@@ -1,0 +1,122 @@
+.search-container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  min-height: 100vh;
+  border-left: black;
+}
+
+.user-input {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 20rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  background-color: rgba(247, 247, 247, 0.389);
+  padding: 12px;
+  border-radius: 12px;
+  border: 0.5px solid rgba(0, 0, 0, 0.174);
+}
+
+.user-input h3 {
+  margin: 0;
+  font-size: 18px;
+  align-content: center;
+  font-style: italic;
+  color: rgb(0, 0, 0);
+}
+
+.search-button {
+  background-color: rgba(112, 112, 112, 0.1);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(112, 112, 112, 0.2);
+  }
+}
+
+.add-button {
+  background-color: rgba(112, 112, 112, 0.1);
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: rgba(112, 112, 112, 0.2);
+  }
+}
+.lane-container {
+  display: grid;
+  /* Forces new elements to generate side-by-side columns */
+  grid-auto-flow: column;
+  /* Forces every single column to occupy 1 exact equal fraction of the space */
+  grid-auto-columns: 1fr;
+
+  /* Forces the container to take up the absolute entire screen */
+  width: 100vw;
+  height: 100vh;
+  border: black;
+}
+
+.lanes {
+  /* Center your content inside each full-page lane */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Give them a distinct border or background to see the split clearly */
+  border-left: 2px solid #333;
+  font-size: 2rem;
+}
+
+.lane {
+  /* Give them a distinct border or background to see the split clearly */
+  display: flex;
+  flex-direction: column;
+  border-left: 2px solid #333;
+  font-size: 2rem;
+  width: auto;
+  height: 100vh;
+}
+.lane h1 {
+  justify-content: center;
+  padding: 12px;
+  font-size: 24px;
+  text-align: center;
+  font-style: oblique;
+  border-bottom: solid 2px #333;
+}
+
+.stories {
+  display: grid;
+  /* Forces new elements to generate side-by-side columns */
+  grid-auto-flow: column;
+  gap: 12px;
+  /* border: 2px solid black; */
+  padding: 12px;
+}
+
+.stories:hover {
+  background-color: gainsboro;
+}
+
+.story {
+  font-size: 16px;
+}
+
+.comments {
+  font-size: 12px;
+}
